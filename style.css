@@ -53,7 +53,7 @@ body {
     width: 125px;
 }
 .blockAnimate {
-    animation: blockAnimate is linear infinite;
+    animation: blockAnimate ls linear infinite;
 }
 @keyframes blockAnimate {
     0%
