@@ -1,15 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
 }
-body{
+body {
     display: grid;
     place-items: center;
     height: 100vh;
 }
-#container{
+#container {
     height: 400px;
     width: 1200px;
     position: relative;
@@ -23,14 +23,14 @@ body{
     left: 20px;
     
 }
-#container #dino img{
+#container #dino img {
     height: 70px;
     width: 70px;
 }
 .dinoActive{
     animation: animateDino 0.5s linear infinite;
 }
-@keyframes animateDino{
+@keyframes animateDino {
     0%,100%
     {
         bottom: 28px;
@@ -40,7 +40,7 @@ body{
         bottom: 160px;
     }
 }
-#container #block{
+#container #block {
     height: 80px;
     width: 125px;
     position: absolute;
@@ -48,14 +48,14 @@ body{
     right: -20px;
     
 }
-#container #block img{
+#container #block img {
     height: 80px;
     width: 125px;
 }
-.blockAnimate{
+.blockAnimate {
     animation: blockAnimate is linear infinite;
 }
-@keyframes blockAnimate{
+@keyframes blockAnimate {
     0%
     {
         right: -125px;
@@ -64,4 +64,10 @@ body{
     {
         right: 100%;
     }
+}
+#container #road {
+    height: 30px;
+    width: 1200px;
+    position: absolute;
+    bottom: 0;
 }
