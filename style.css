@@ -21,11 +21,14 @@ body{
     position: absolute;
     bottom: 28px;
     left: 20px;
-    animation: animateDino 0.5s linear infinite;
+    
 }
 #container #dino img{
     height: 70px;
     width: 70px;
+}
+.dinoActive{
+    animation: animateDino 0.5s linear infinite;
 }
 @keyframes animateDino{
     0%,100%
@@ -35,5 +38,30 @@ body{
     45%,55%
     {
         bottom: 160px;
+    }
+}
+#container #block{
+    height: 80px;
+    width: 125px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    
+}
+#container #block img{
+    height: 80px;
+    width: 125px;
+}
+.blockAnimate{
+    animation: blockAnimate is linear infinite;
+}
+@keyframes blockAnimate{
+    0%
+    {
+        right: -125px;
+    }
+    100%
+    {
+        right: 100%;
     }
 }
