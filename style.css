@@ -1,24 +1,39 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
-#game{
-    width: 700px;
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+#container{
     height: 400px;
-    border: 1px solid black;
-}
-#game #char{
-    
-    height: 10px;
-    width: 10px;
-    top: 400px;
-    
-}
-#block{
-    width: 20px;
-    height: 30px;
-    background-color: grey;
+    width: 1200px;
     position: relative;
-    top: 130px;
-    left: 480px;
+    overflow: hidden;
+}
+#container #dino {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+    animation: animateDino 0.5s linear infinite;
+}
+#container #dino img{
+    height: 70px;
+    width: 70px;
+}
+@keyframes animateDino{
+    0%,100%
+    {
+        bottom: 28px;
+    }
+    45%,55%
+    {
+        bottom: 160px;
+    }
 }
