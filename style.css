@@ -71,3 +71,20 @@ body {
     position: absolute;
     bottom: 0;
 }
+#container #road  img{
+    height: 30px;
+    width: 2000px;
+    position:absolute;
+    left: 0;
+    animation: roadAnimate ls linear infinite;
+}
+@keyframes roadAnimate {
+    0%
+    {
+        left: 0;
+    }
+    100%
+    {
+        left: -800px;;
+    }
+}
