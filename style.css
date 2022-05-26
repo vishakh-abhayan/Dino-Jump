@@ -87,4 +87,18 @@ body {
     {
         left: -800px;;
     }
+}#score{
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+#gameover{
+    font-size: 70px;
+    position: absolute;
+    left: calc(50% - 181px);
+    width: 362px;
+    height: 80px;
+    color: #525252;
 }
