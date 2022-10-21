@@ -26,3 +26,19 @@ function hy(n1, n2) {
 
 hy(20, 39);
 interval = setInterval(scoreCounter, 200);
+
+
+setTimeout(() => {
+  console.log("hello");
+}, 4000);
+
+function hy(n1, n2) {
+  if (n1 == 0 && n2 == 0) {
+    console.log("error");
+  } else {
+    console.log(n1 * n2);
+  }
+}
+
+hy(20, 39);
+interval = setInterval(scoreCounter, 200);
